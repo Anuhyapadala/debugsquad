@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>form 1</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* change this to any color */
+        }
+    </style>
+</head>
+
+<body>
+    <label for="firstName">firstName :</label>
+    <input type="text" id="firstName"><br><br>
+
+    <label for="MiddleName">MiddleName :</label>
+    <input type="text" id="MiddleName"><br><br>
+
+    <label for="lastname">lastName :</label>
+    <input type="text" id="lastName"><br><br>
+
+    <div>
+        <label for="course" class="block text-sm font-medium text-gray-700">Course :</label>
+        <select id="course" name="course"
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option value=""> course </option>
+            <option value="html">HTML Basics</option>
+            <option value="css">CSS Styling</option>
+            <option value="javascript">JavaScript Essentials</option>
+            <option value="tailwind">Tailwind CSS</option>
+            <option value="git">Git & Version Control</option>
+        </select><br><br>
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Gender :</label>
+        <div class="flex items-center space-x-4">
+            <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="male" class="form-radio text-blue-600">
+                <span class="ml-2 text-gray-700">Male</span>
+            </label><br>
+            <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="female" class="form-radio text-pink-600">
+                <span class="ml-2 text-gray-700">Female</span>
+            </label><br>
+            <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="other" class="form-radio text-purple-600">
+                <span class="ml-2 text-gray-700">Other</span><br>
+            </label><br>
+        </div>
+    </div>
+
+    <label for="phone">Phone:</label>
+    <div class="form-block">
+        <div class="phone-group">
+            <input type="text" class="country-code" value="+91" readonly>
+            <input type="tel" class="phone-number" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+    </div><br>
+    <div class="form-block">
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60" placeholder="Enter your address" required></textarea>
+    </div><br><br>
+    <label for="email">Email :</label>
+    <input type="email" id="email"><br><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password"><br><br>
+
+    <label for="password">Re-type password</label>
+    <input type="password" id="password"><br><br>
+
+    <button type="submit">submit</button>
+
+</body>
+
+</html>
