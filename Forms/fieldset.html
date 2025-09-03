@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fieldset with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-2xl space-y-6">
+    
+    <!-- Fieldset 1 -->
+    <fieldset class="border-2 border-gray-300 rounded-2xl p-6 shadow-md bg-white">
+      <legend class="px-3 text-lg font-semibold text-gray-700">User Info 1</legend>
+      
+      <div class="space-y-4">
+        <input type="text" name="user name" placeholder="Enter user name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        
+        <input type="tel" name="phone-number" placeholder="Enter phone number" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        
+        <input type="email" name="email" placeholder="Enter user email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        
+        <input type="text" name="address" placeholder="Enter user address" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+      </div>
+    </fieldset>
+
+    <!-- Fieldset 2 -->
+    <fieldset class="border-2 border-gray-300 rounded-2xl p-6 shadow-md bg-white">
+      <legend class="px-3 text-lg font-semibold text-gray-700">User Info 2</legend>
+      
+      <div class="space-y-4">
+        <input type="text" name="user name" placeholder="Enter user name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
+        
+        <input type="tel" name="phone-number" placeholder="Enter phone number" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
+        
+        <input type="email" name="email" placeholder="Enter user email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
+        
+        <input type="text" name="address" placeholder="Enter user address" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
+      </div>
+    </fieldset>
+
+  </div>
+</body>
+</html>
